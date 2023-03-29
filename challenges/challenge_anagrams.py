@@ -1,3 +1,6 @@
 def is_anagram(first_string, second_string):
-    """Faça o código aqui."""
-    raise NotImplementedError
+    if not first_string \
+            or not second_string \
+            or len(first_string) < 2 \
+            or len(second_string) < 2:
+        return (first_string, second_string, False)
